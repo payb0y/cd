@@ -1,0 +1,33 @@
+{
+    "name": "cd",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "electron .",
+        "pack": "electron-builder --dir",
+        "dist": "electron-builder"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "electron": "^29.1.6",
+        "electron-builder": "^24.13.3",
+        "electron-updater": "^6.1.8"
+    },
+    "build": {
+        "appId": "com.lindo.bot",
+        "productName": "lindo-bot",
+        "directories": {
+            "output": "dist"
+        },
+        "publish": [
+            {
+                "provider": "github",
+                "owner": "payb0y",
+                "repo": "electron"
+            }
+        ]
+    }
+}
